@@ -14,14 +14,14 @@ DEFAULT_GIT_REPO = "https://github.com/EpicGames/UnrealEngine.git"
 # The base images for Linux containers
 LINUX_BASE_IMAGES = {
     "opengl": "nvidia/opengl:1.0-glvnd-devel-{ubuntu}",
-    "cudagl": "nvidia/cudagl:{cuda}-devel-{ubuntu}",
+    "cudagl": "registry.gitlab.com/keckj/droneai:{cuda}-devel-{ubuntu}",
 }
 
 # The default ubuntu base to use
-DEFAULT_LINUX_VERSION = "ubuntu18.04"
+DEFAULT_LINUX_VERSION = "ubuntu20.04"
 
 # The default CUDA version to use when `--cuda` is specified without a value
-DEFAULT_CUDA_VERSION = "11.4"
+DEFAULT_CUDA_VERSION = "11.8.0"
 
 # The default memory limit (in GB) under Windows
 DEFAULT_MEMORY_LIMIT = 10.0
